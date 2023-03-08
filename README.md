@@ -8,11 +8,13 @@ Le clustering est une sous-classe d'algorithmes d'apprentissage automatique util
 Pour la recherche des contacts, nous devons utiliser un algorithme de clustering basé sur la densité. La raison en est que les maladies sont transférées lorsqu'une personne infectée entre en contact avec d'autres. Ainsi, les zones plus encombrées - denses - auront plus de cas que les moins encombrées.
 
 **Base de données**
+
 Pour retracer le mouvement des personnes infectées, les scientifiques utilisent souvent des ensembles de données GPS qui contiennent des informations sur l'heure et l'emplacement d'une personne à une période donnée. Les données de localisation sont souvent représentées sous forme de coordonnées de longitude et de latitude.
 
 Malheureusement, nous ne pouvons pas obtenir de données réelles à partir des emplacements GPS. Nous allons donc créer un ensemble de données simulé sur lequel appliquer notre algorithme. Pnous allons utiliser un générateur de données simulé pour générer un ensemble de données JSON contenant 100 entrées des emplacements de 10 utilisateurs. cette base de données peut eter télechargere du drive suivant:https://drive.google.com/file/d/1fYkBwXmDHLmRk_MCtiAOrcYwwyIqERbF/view
 
-** l'algorithme DBSCAN**
+**l'algorithme DBSCAN**
+
 L' algorithme DBSCAN considère les clusters comme des zones de haute densité séparées par des régions de faible densité. Pour cette raison, les clusters trouvés par DBSCAN peuvent être de n'importe quelle forme, par opposition aux k-means, qui suppose que tous les clusters sont de forme convexe.
 
 eps: ce facteur indique la distance entre les différents points d'un même cluster. Dans notre cas, nous utiliserons la distance recommandée par le CDC, qui est de 6 pieds (ou 0,0018288 kilomètres).
