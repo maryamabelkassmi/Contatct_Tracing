@@ -1,6 +1,6 @@
 # Contatct_Tracing
-**Using DBSCAN Algorithm
-**
+**Using DBSCAN Algorithm**
+
 Contact tracing is the name of the process used to identify those who come into contact with people who have tested positive for communicable diseases – such as measles, HIV and COVID-19. During a pandemic, proper contact tracing can help reduce the number of infected people or speed up the process of treating those infected. This can help save many lives.
 
 Clustering is a subclass of machine learning algorithms used to divide data that share certain characteristics in different clusters based on those characteristics.
